@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about', to: 'pages#about', as: :about
+  get 'contact', to: 'pages#contact', as: :contact
   get 'todos/index'
   get 'todos/show'
   get 'todos/new'
