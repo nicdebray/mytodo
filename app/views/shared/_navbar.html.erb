@@ -5,7 +5,7 @@
   <div class="navbar-todo-right">
     <div class="navbar-todo-search">
       <%= form_tag(todos_path, method: :get) do %>
-      <%= text_field_tag(:search, params[:search]) %>
+      <%= text_field_tag(:search, params[:search], placeholder: "Search your todo's", class: "search-box-field") %>
       <%= submit_tag ("Search"), name: nil %>
       <% end %>
     </div>

@@ -1,3 +1,22 @@
 .navigation-links {
   margin-top: 80px;
 }
+
+.navigation-links ul {
+  list-style-type: none;
+}
+
+.navigation-links a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.homepage-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

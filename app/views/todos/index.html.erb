@@ -25,4 +25,6 @@
     <%= render 'shared/todos_form', todo: @todo %>
   </div>
   <div><%= link_to "Signout", destroy_user_session_path, method: :delete %> </div>
+  <div><%= current_user.email %></div>
+  <div><%= user_signed_in? %></div>
 </div>

@@ -16,6 +16,29 @@
 }
 
 .navbar-todo-logo img {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+}
+
+.search-box-field {
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 1)!important;
+  color: gray;
+  width: 275px;
+  padding-top: 5px;
+  padding-left: 15px;
+  border-radius: 47px;
+}
+
+.search-box-field:focus {
+  outline-width: 0;
+}
+
+.search-box-field::-webkit-input-placeholder {
+  color: gray;
+}
+
+.search-box-field:focus::-webkit-input-placeholder {
+  transition: 0.5s ease;
+  opacity: 0;
 }
