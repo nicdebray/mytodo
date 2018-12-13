@@ -1,0 +1,13 @@
+<div class="navbar-todo">
+  <div class="navbar-todo-logo">
+  <%= link_to image_tag('todo-logo.png'), root_path %>
+  </div>
+  <div class="navbar-todo-right">
+    <div class="navbar-todo-search">
+      <%= form_tag(todos_path, method: :get) do %>
+      <%= text_field_tag(:search, params[:search]) %>
+      <%= submit_tag ("Search"), name: nil %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+.all-todos {
+  margin-top: 75px;
+}
+
+.all-todo-first {
+  display: flex;
+}
+
+.all-todo-first-icon img {
+  height: 20px;
+}
+
+.all-todo-first-txt {
+  font-size: 22px;
+  padding-left: 15px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.all-todos-cards {
+  margin-top: 10px;
+}
+
+.todos-card {
+  position: relative;
+  background-color: yellow;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.todos-card-title {
+  font-size: 20px;
+}
+
+.todos-card-actions {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+}
+
+.all-todos-create {
+  padding: 15px;
+}
+
+.all-todos-create-title {
+
+}

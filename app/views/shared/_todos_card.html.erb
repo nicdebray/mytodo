@@ -1,0 +1,17 @@
+<div class="todos-card">
+  <div class="todos-card-title">
+    <p><%= todo.title %></p>
+  </div>
+  <div class="todos-card-description">
+    <p><%= todo.description %></p>
+  </div>
+  <div class="todos-card-actions">
+    <div class="todos-card-edit">
+      <p><%= link_to "Edit", edit_todo_path(todo) %></p>
+    </div>
+    <div class="todos-card-delete">
+      <p><%= link_to "Delete", todo_path(todo), method: :delete %></p>
+    </div>
+  </div>
+</div>
+

@@ -1,5 +1,8 @@
-<h1>Todos#new</h1>
-<p>Find me in app/views/todos/new.html.erb</p>
-<div>
-  <%= render 'shared/todos_form', todo: @todo %>
+<div class="container-fluid">
+<h1>Create a new todo</h1>
+  <div class="row">
+    <div class="card col-sm-12 col-md-6 offset-md-3">
+    <%= render 'shared/todos_form', todo: @todo %>
+    </div>
+  </div>
 </div>

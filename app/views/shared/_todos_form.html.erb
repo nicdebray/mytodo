@@ -1,8 +1,5 @@
-<%= simple_form_for @todo do |f| %>
+<%= simple_form_for(todo, remote: true) do |f| %>
 <%= f.input :title, label: "Your todo" %>
 <%= f.input :description, label: "Description" %>
-<%= f.button :submit %>
+<%= f.button :submit, class: "btn btn-success" %>
 <% end %>
-<ul>
-  <li><%= link_to "Home", root_path %></li>
-</ul>

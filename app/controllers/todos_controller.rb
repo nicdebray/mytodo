@@ -2,7 +2,13 @@ class TodosController < ApplicationController
   before_action :todo_find, only: [:show, :edit, :update, :destroy]
 
   def index
-    @todos = Todo.all
+    # @todos = Todo.all
+    @todo = Todo.new
+    if params[:search]
+      @todos = Todo.where('title LIKE ?', "%#{params[:search]}")
+    else
+      @todos = Todo.all
+    end
   end
 
   def show
@@ -15,9 +21,15 @@ class TodosController < ApplicationController
   def create
     @todo = Todo.new(todo_params)
     if @todo.save
-      redirect_to todos_path
+      respond_to do |format|
+      format.html { redirect_to todos_path }
+      format.js
+      end
     else
-      render :new
+      respond_to do |format|
+      format.html { render :new }
+      format.js
+      end
     end
   end
 
@@ -43,7 +55,7 @@ class TodosController < ApplicationController
   private
 
   def todo_params
-    params.require(:todo).permit(:title, :description)
+    params.require(:todo).permit(:title, :description, :search)
   end
 
   def todo_find
