@@ -11,7 +11,6 @@ function addTodo(todoHTML) {
 <% if @todo.errors.any? %>
   refreshForm('<%= j render "shared/todos_form", todo: @todo %>');
 <% else %>
-  console.log(alert("coucou"));
   addTodo('<%= j render "shared/todos_card", todo: @todo %>');
   refreshForm('<%= j render "shared/todos_form", todo: Todo.new %>');
 <% end %>
