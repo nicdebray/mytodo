@@ -2,7 +2,6 @@ class TodosController < ApplicationController
   before_action :todo_find, only: [:show, :edit, :update, :destroy]
 
   def index
-    # @todos = Todo.all
     @todo = Todo.new
     if params[:search]
       @todos = Todo.where('title LIKE ?', "%#{params[:search]}")

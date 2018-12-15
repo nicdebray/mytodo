@@ -20,11 +20,13 @@
   </div>
   <div class="all-todos-create col-xs-12 col-sm-6 offset-sm-2">
     <div class="all-todos-create-title">
-      <h3>Create new todo</h3>
+      <h3>Create new todo <%= image_tag ("menu-dropdown.png"), class: "menu-dropdown-new-todo" %></h3>
     </div>
     <%= render 'shared/todos_form', todo: @todo %>
   </div>
   <div><%= link_to "Signout", destroy_user_session_path, method: :delete %> </div>
   <div><%= current_user.email %></div>
   <div><%= user_signed_in? %></div>
+  <div><%= current_user.id %></div>
+  <div><%= @todo.weather_api %></div>
 </div>

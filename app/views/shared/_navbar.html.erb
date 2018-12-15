@@ -6,8 +6,10 @@
     <div class="navbar-todo-search">
       <%= form_tag(todos_path, method: :get) do %>
       <%= text_field_tag(:search, params[:search], placeholder: "Search your todo's", class: "search-box-field") %>
-      <%= submit_tag ("Search"), name: nil %>
+      <%= submit_tag "Search", name: nil, class: "navbar-search-button" %>
       <% end %>
+    </div>
+    <div class="weather">
     </div>
   </div>
 </div>

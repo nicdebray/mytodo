@@ -27,7 +27,7 @@
   width: 275px;
   padding-top: 5px;
   padding-left: 15px;
-  border-radius: 47px;
+  border-radius: 10px;
 }
 
 .search-box-field:focus {
@@ -41,4 +41,30 @@
 .search-box-field:focus::-webkit-input-placeholder {
   transition: 0.5s ease;
   opacity: 0;
+}
+
+.navbar-search-button {
+  border-radius: 10px;
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+  border-style: light-gray;
+  height: 31px;
+}
+
+.navbar-todo-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+#weather-block {
+  padding-left: 5px;
 }

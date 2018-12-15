@@ -47,5 +47,17 @@
 }
 
 .all-todos-create-title {
+  cursor: pointer;
+}
 
+.menu-dropdown-new-todo {
+  height: 30px;
+}
+
+.menu-dropdown-new-todo-up {
+transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
 }
