@@ -11,7 +11,7 @@ def weather
   user_serialized = open(url).read
   user = JSON.parse(user_serialized)
 
-  records = user["main"]["temp"]
+  records = user["main"]["temp"] - 273.15
 end
 
 end
