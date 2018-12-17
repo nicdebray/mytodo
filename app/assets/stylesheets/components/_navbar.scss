@@ -52,19 +52,25 @@
   height: 31px;
 }
 
+.navbar-todo-avatar {
+  padding: 0px 25px;
+  cursor: pointer;
+}
+
+.navbar-todo-avatar img {
+  height: 35px;
+  width: 35px;
+  padding: 2px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
 .navbar-todo-right {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.weather {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  padding-left: 5px;
-}
-
-#weather-block {
-  padding-left: 5px;
+.navbar-todo-right-login a {
+  text-decoration: none;
 }

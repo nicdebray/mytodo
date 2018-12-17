@@ -23,7 +23,7 @@
 
 .todos-card {
   position: relative;
-  background-color: yellow;
+  background-color: #fff60b;
   border-radius: 5px;
   padding: 15px;
   margin-bottom: 10px;
@@ -40,6 +40,12 @@
   display: flex;
   justify-content: space-between;
   width: 85px;
+}
+
+.todos-card-actions a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #898976;
 }
 
 .all-todos-create {

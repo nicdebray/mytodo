@@ -10,8 +10,13 @@
       <%= submit_tag "Search", name: nil, class: "navbar-search-button" %>
       <% end %>
     </div>
-  </div>
+    <div class="navbar-todo-avatar">
+      <%= image_tag("avatar-ninja.png") %>
+    </div>
   <% else %>
-    <%= link_to "Log in", new_user_session_path %>
+    <div class="navbar-todo-right-login">
+      <%= link_to "Log in", new_user_session_path %>
+    </div>
   <% end %>
+  </div>
 </div>
