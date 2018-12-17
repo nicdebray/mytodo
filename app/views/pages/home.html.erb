@@ -9,15 +9,18 @@
     </div>
     <% else %>
     <div class="homepage-notsigned">
-      <div class="row">
-        <div class="homepage-notsigned-title col-xs-12 col-sm-10">
+      <div class="row homepage-notsigned-title">
+        <div class="homepage-notsigned-title-txt col-xs-12 col-sm-10">
           <h1>Get things done</h1>
           <h2>Your easy todo's manager</h2>
         </div>
-        <div class="col-xs-12 col-sm-2" id="homepage-notsigned-img">
+        <div class="col-xs-12 col-sm-2" id="homepage-notsigned-title-img">
           <%= image_tag("icons/coffee-cup.svg") %>
         </div>
       </div>
+    </div>
+    <div class="homepage-notsigned-btn-signup btn btn-warning col-xs-12">
+      <%= link_to "Create your account", new_user_registration_path %>
     </div>
     <% end %>
   </div>

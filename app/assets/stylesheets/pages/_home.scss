@@ -16,12 +16,27 @@
   color: white;
   padding-left: 50px;
   padding-top: 50px;
+  width: 100%;
+  display: flex;
 }
 
-#homepage-notsigned-img img {
+.homepage-notsigned-title {
+}
+
+#homepage-notsigned-title-img img {
   height: 89px;
   display: flex;
   align-items: center;
+}
+
+.homepage-notsigned-btn-signup {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.homepage-notsigned-btn-signup a {
+  color: white;
+  text-decoration: none;
 }
 
 .homepage-banner {
