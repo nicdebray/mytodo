@@ -14,8 +14,8 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <%= yield %>
     <%= render 'shared/flashes' %>
+    <%= yield %>
     <%= render 'shared/bootstrap_scripts' %>
     <%= javascript_pack_tag 'after_load' %>
   </body>

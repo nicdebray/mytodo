@@ -1,4 +1,4 @@
-.navigation-links {
+.container-fluid {
   margin-top: 80px;
 }
 
@@ -10,6 +10,18 @@
   font-size: 24px;
   color: white;
   text-decoration: none;
+}
+
+.homepage-notsigned {
+  color: white;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+#homepage-notsigned-img img {
+  height: 89px;
+  display: flex;
+  align-items: center;
 }
 
 .homepage-banner {

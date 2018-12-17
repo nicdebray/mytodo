@@ -1,9 +1,26 @@
-<div class="navigation-links">
-  <ul>
-    <li><%= link_to "My Todos", todos_path %></li>
-    <li><%= link_to "New Todo", todos_new_path %></li>
-  </ul>
+<div class="container-fluid">
+  <div class="row">
+    <% if user_signed_in? %>
+    <div class="navigation-links">
+      <ul>
+        <li><%= link_to "My Todos", todos_path %></li>
+        <li><%= link_to "New Todo", todos_new_path %></li>
+      </ul>
+    </div>
+    <% else %>
+    <div class="homepage-notsigned">
+      <div class="row">
+        <div class="homepage-notsigned-title col-xs-12 col-sm-10">
+          <h1>Get things done</h1>
+          <h2>Your easy todo's manager</h2>
+        </div>
+        <div class="col-xs-12 col-sm-2" id="homepage-notsigned-img">
+          <%= image_tag("icons/coffee-cup.svg") %>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+  <div class="homepage-banner" style="background-image: linear-gradient(to right top, #e275c3, #ff759f, #ff8d6c, #ffb834, #f0e700);"></div>
 </div>
-<div class="homepage-banner" style="background-image: linear-gradient(to right top, #e275c3, #ff759f, #ff8d6c, #ffb834, #f0e700);"></div>
-
 

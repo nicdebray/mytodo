@@ -1,8 +1,10 @@
-<div class="todo-edit-title">
-  <h3>Edit your todo: <%= @todo.title %></h3>
-  <div class="todo-edit-form col-xs-12 col-sm-6 offset-sm-2">
-    <div>
-      <%= render 'shared/todos_form', todo: @todo %>
+<div class="container-fluid">
+  <div class="todo-edit-title">
+    <h3>Edit your todo: <%= @todo.title %></h3>
+    <div class="todo-edit-form col-xs-12 col-sm-6 offset-sm-2">
+      <div>
+        <%= render 'shared/todos_form', todo: @todo %>
+      </div>
     </div>
   </div>
 </div>
