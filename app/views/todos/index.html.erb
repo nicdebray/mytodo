@@ -23,6 +23,9 @@
     <div class="all-todos-create-title">
       <h3>Create new todo <%= image_tag ("menu-dropdown.png"), class: "menu-dropdown-new-todo" %></h3>
     </div>
+    <div id="new-todo-field" class="hidden">
     <%= render 'shared/todos_form', todo: @todo %>
+    </div>
   </div>
+<%= javascript_pack_tag 'after_load_todo_index' %>
 </div>

@@ -1,13 +1,7 @@
 // toggle create new todo
-function hideForm(){
-  const createnewtodofield = document.querySelector("#new_todo");
-  createnewtodofield.classList.add("hidden");
-}
-
-hideForm();
 
 function createNewTodoField() {
-  const createnewtodofield = document.querySelector("#new_todo");
+  const createnewtodofield = document.querySelector("#new-todo-field");
   createnewtodofield.classList.toggle("hidden");
 }
 
@@ -26,18 +20,3 @@ function createNewTodoClick(){
 
 createNewTodoClick();
 // End toggle create new todo
-
-
-// toggle avatar menu
-function avatarMenuOpen() {
-  const avatarmenu = document.querySelector(".user-menu");
-  avatarmenu.classList.toggle("hidden");
-}
-
-function showAvatarMenuClick() {
-  const avataricon = document.querySelector(".navbar-todo-avatar");
-  avataricon.addEventListener("click", avatarMenuOpen);
-}
-
-showAvatarMenuClick();
-// End toggle avatar menu
