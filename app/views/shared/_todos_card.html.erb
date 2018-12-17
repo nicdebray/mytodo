@@ -7,10 +7,10 @@
   </div>
   <div class="todos-card-actions">
     <div class="todos-card-edit">
-      <p><%= link_to "Edit", edit_todo_path(todo) %></p>
+      <%= link_to "Edit", edit_todo_path(todo) %>
     </div>
     <div class="todos-card-delete">
-      <p><%= link_to "Delete", todo_path(todo), method: :delete %></p>
+      <%= link_to "Delete", todo_path(todo), method: :delete %>
     </div>
   </div>
 </div>
