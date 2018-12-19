@@ -19,6 +19,7 @@ class TodosController < ApplicationController
 
   def create
     @todo = Todo.new(todo_params)
+    @todo.user = current_user
     if @todo.save
       respond_to do |format|
       format.html { redirect_to todos_path }
