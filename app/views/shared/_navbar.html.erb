@@ -5,10 +5,7 @@
   <% if user_signed_in? %>
   <div class="navbar-todo-right">
     <div class="navbar-todo-search">
-      <%= form_tag(todos_path, method: :get) do %>
-      <%= text_field_tag(:search, params[:search], placeholder: "Search your todo's", class: "search-box-field") %>
-      <%= submit_tag "Search", name: nil, class: "navbar-search-button" %>
-      <% end %>
+      <%= render 'shared/search' %>
     </div>
     <div class="user-avatar-menu">
       <div class="navbar-todo-avatar">
