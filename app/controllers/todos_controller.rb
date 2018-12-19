@@ -4,9 +4,9 @@ class TodosController < ApplicationController
   def index
     @todo = Todo.new
     if params[:search]
-      @todos = Todo.where('title LIKE ?', "%#{params[:search]}")
+      @todos = current_user.todos.where('title LIKE ?', "%#{params[:search]}")
     else
-      @todos = Todo.all
+      @todos = current_user.todos.all
     end
   end
 

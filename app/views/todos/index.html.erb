@@ -1,6 +1,6 @@
 <div class="container-fluid all-todos">
   <h1>My Todo's</h1>
-  <div><%= @todo.weather_temp %>°c in <%= @todo.weather_location %> </div>
+  <div><%= weather_fetcher.weather_temp %>°c in <%= weather_fetcher.weather_location %> </div>
   <div class="row">
     <div class="all-todos-cards col-xs-12 col-sm-6 offset-sm-2" id="todos">
       <% if @todos.blank? %>
