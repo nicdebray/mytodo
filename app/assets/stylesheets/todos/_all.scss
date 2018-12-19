@@ -1,5 +1,6 @@
 .all-todos {
   margin-top: 75px;
+  color: white;
 }
 
 .all-todo-first {
@@ -12,6 +13,7 @@
 
 .all-todo-first-txt {
   font-size: 22px;
+  color: white;
   padding-left: 15px;
   font-style: italic;
   margin-bottom: 50px;
@@ -19,6 +21,7 @@
 
 .all-todos-cards {
   margin-top: 10px;
+  color: black;
 }
 
 .todos-card {
@@ -59,7 +62,8 @@
 }
 
 .menu-dropdown-new-todo {
-  height: 30px;
+  padding-left: 10px;
+  height: 25px;
 }
 
 .menu-dropdown-new-todo-up {
